@@ -1,0 +1,184 @@
+@font-face {
+    font-family: cursiveish;
+    src: url(adventium-font/AdventiumDemo-rgydO.ttf);
+    color: white;
+}
+
+@font-face {
+    font-family: Brettley;
+    src: url(brettley-signature-font/BrettleySignatureRegular-RpEMo.ttf);
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cursiveish";
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    background: url("france_bg.jpg");
+    background-size: 100%;
+    background-position: center;
+    
+}
+
+.header {
+    /* position: fixed; */
+    text-align: center;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 30px;
+    background: black;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* display: block; */
+}
+
+.name {
+    
+    margin: auto;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    
+    font-weight: 200;
+    letter-spacing: 1px;
+    
+}
+
+.title_heading {
+    display: flex;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+}
+
+.title_heading img {
+    width: 30%;
+    height: 30%;
+    padding: 0%;
+}
+
+.top_navbar img {
+    width: 1%;
+    height: 1%;
+    padding: 0%;
+}
+/* .eiffel-foreground::before {
+    content:"";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background: url("base.png") top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+    filter: blur(2px);
+}
+
+.eiffel-foreground::after {
+    content: "";
+    position: relative;
+    top: 900px;
+    left: 900px;
+    width: 8%;
+    height: 80%;
+    transform: translateZ(-1px) scale(2.2);
+    z-index: 10000;
+    transform-style: preserve-3d;
+} */
+/* background-position-x: 0;
+background-position-y: flex; */
+/*
+.left {
+
+}
+
+.right {
+} */
+
+
+.top_navbar a {
+    font-family: Brettley;
+    
+    position: relative;
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.top_navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+
+.top_navbar a:hover::before {
+    width: 100%;
+}
+
+.bottom_navbar_header {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px;
+    background: green;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/* min-height: 100vh; */
+/* display: block; */
+
+.bottom_navbar a{
+    font-family: cursiveish;
+    
+    position: relative;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    font-weight: 100;
+}
+
+.bottom_navbar_header img {
+    width: 15%;
+    height: 15%;
+}
+
+.left_footer {
+    display: inline-block;
+    width: 25%;
+    color: orange;
+}
+
+.middle_footer {
+    display: inline-block;
+    width: 50%;
+    color: pink;
+}
+
+.right_footer {
+    display: inline-block;
+    width: 25%;
+    color: yellow;
+}
