@@ -1,114 +1,90 @@
 @font-face {
-    font-family: cursiveish;
-    src: url(adventium-font/AdventiumDemo-rgydO.ttf);
+    font-family: Adventium;
+    src: url(Fonts/AdventiumDemo-rgydO.ttf);
     color: white;
 }
 
 @font-face {
     font-family: Brettley;
-    src: url(brettley-signature-font/BrettleySignatureRegular-RpEMo.ttf);
+    src: url(Fonts/BrettleySignatureRegular-RpEMo.ttf);
     color: white;
+}
+
+@font-face { /*lined handwriting*/
+    font-family: Penmanship;
+    src: url("Fonts/SimpleKindOfGirl-mnnm.ttf");
+    color: white;
+}
+
+@font-face { /*cafe*/
+    font-family: WhiteFestive; 
+    src: url("Fonts/white_festive_1024.png");
+    color: white;
+    
+    
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "cursiveish";
+    /* font-family: "Brettley"; */
+    color: black;
+}
+
+h1 {
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 5px;
+    line-height: 2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: WhiteFestive;
+    
+    line-height: 2;
+    text-indent: 3%;
 }
 
 body {
     min-height: 100vh;
-    background: url("france_bg.jpg");
-    background-size: 100%;
+    background: url("Images/france_bg.jpg");
+    background-size: 20%;
     background-position: center;
-    
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding-right: 300px;
+    padding-left: 50px;
 }
 
-.header {
-    /* position: fixed; */
+
+
+
+
+.top_navbar_header {    
+    font-family: Adventium;
+    position: fixed;
     text-align: center;
-    top: 100%;
-    left: 0%;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 30px;
+    padding: 10px;
     background: black;
-    display: inline-block;
+    display: inline;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    /* display: block; */
 }
-
-.name {
-    
-    margin: auto;
-    font-size: 40px;
-    color: white;
-    text-decoration: none;
-    
-    font-weight: 200;
-    letter-spacing: 1px;
-    
-}
-
-.title_heading {
-    display: flex;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-x: hidden;
-}
-
-.title_heading img {
-    width: 30%;
-    height: 30%;
-    padding: 0%;
-}
-
-.top_navbar img {
-    width: 1%;
-    height: 1%;
-    padding: 0%;
-}
-/* .eiffel-foreground::before {
-    content:"";
-    width:100%;
-    height: 100%;
-    position: absolute;
-    background: url("base.png") top center;
-    background-size: cover;
-    transform: translateZ(-1px) scale(2.2);
-    filter: blur(2px);
-}
-
-.eiffel-foreground::after {
-    content: "";
-    position: relative;
-    top: 900px;
-    left: 900px;
-    width: 8%;
-    height: 80%;
-    transform: translateZ(-1px) scale(2.2);
-    z-index: 10000;
-    transform-style: preserve-3d;
-} */
-/* background-position-x: 0;
-background-position-y: flex; */
-/*
-.left {
-
-}
-
-.right {
-} */
-
 
 .top_navbar a {
-    font-family: Brettley;
+    font-family: "Brettley";
     
     position: relative;
-    font-size: 28px;
+    font-size: 24px;
     color: white;
     font-weight: 500;
     text-decoration: none;
@@ -131,54 +107,285 @@ background-position-y: flex; */
     width: 100%;
 }
 
+.top_navbar_dividers {
+    content: url("Images/in-line-ornament.png");
+    width: 1%;
+    height: 1%;
+    padding: 0%;
+}
+
+
+
+
+
+/* .header {
+    font-family: Adventium;
+    text-align: center;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 10px;
+    background: black;
+    display: inline-block;
+
+    position: relative;
+    margin-top: 80px;
+
+    align-items: center;
+    z-index: 10;
+} */
+/* justify-content: space-between; */
+/* display: block; */
+
+.body_and_eiffel_foreground {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    
+    margin: auto;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: 20px;
+}
+
+.title_heading {
+    font-family: Adventium;
+    text-align: center;
+    
+
+    position: relative;
+
+    align-items: center;
+    z-index: 10;
+
+
+
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.title_heading_left_ornament {
+    content: url("Images/title_ornament_left_small.png");
+    width: 10%;
+    height: 10%;
+    display: block;
+    position: relative;
+    margin-right: 0px;
+}
+
+.title_heading_right_ornament {
+    content: url("Images/title_ornament_right_small.png");
+    width: 10%;
+    height: 10%;
+    
+    /* padding: 0%; 
+    margin-left: 0px;
+    display: block;*/
+
+}
+
+/* .eiffel_foreground {
+    background-attachment: scroll;
+}
+
+.eiffel_image img {
+    content: url("Images/eiffel-tower-render.webp");
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    position: absolute;
+    transform: translateZ(-1px) scale(2.2);
+    position: absolute;
+} */
+
+.eiffel_foreground::before {
+    content:"";
+    width: 40%;
+    height: 100%;
+    margin-top: -350px;
+    margin-left: 850px;
+    position: absolute;
+    background: url("Images/eiffel-tower-render.webp") top center;
+    background-attachment: scroll;
+    background-size: cover;
+    transform: translateZ(-10px) scale(2.2);
+    z-index: 9;
+}
+/*
+
+.eiffel_foreground::after {
+    content: "";
+    position: relative;
+    top: 900px;
+    left: 900px;
+    width: 8%;
+    height: 80%;
+    transform: translateZ(-1px) scale(2.2);
+    z-index: 10000;
+    transform-style: preserve-3d;
+} */
+/* background-position-x: 0;
+background-position-y: flex; */
+/*
+.left {
+
+}
+
+.right {
+} */
+
+
+.howdy, .why_comp_engr, .my_career_goals {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+
 .bottom_navbar_header {
     position: fixed;
     text-align: center;
     bottom: 0;
     right: 0;
     width: 100%;
-    padding: 30px;
-    background: green;
-    display: inline;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    padding: 10px;
+    background: black;
+    justify-content: space-evenly;
+    display: flex;
+    align-content: center;
+    /*flex-direction: row;
+    z-index: 100; */
 }
-/* min-height: 100vh; */
-/* display: block; */
 
-.bottom_navbar a{
-    font-family: cursiveish;
+.bottom_navbar_header a {
+    font-family: Brettley;
     
     position: relative;
     font-size: 28px;
     color: white;
+    align-items: center;
+    text-align: center;
     text-decoration: none;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; 
     display: flex;
-    font-weight: 100;
+    flex-direction: row;
+    font-weight: 100; */
 }
 
 .bottom_navbar_header img {
-    width: 15%;
-    height: 15%;
+    content: url("Images/in-line-ornament.png");
+    width: 5%;
+    height: 5%;
+    transform: rotate(1deg);
 }
 
-.left_footer {
+.left_footer, .right_footer {
     display: inline-block;
+    /* flex-direction: column; */
+    align-items: center;
     width: 25%;
     color: orange;
 }
 
+/* 
 .middle_footer {
-    display: inline-block;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
     color: pink;
-}
+} */
 
-.right_footer {
-    display: inline-block;
+/* .right_footer {
+    display: flex;
+    flex-direction: column;
     width: 25%;
     color: yellow;
-}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#region Contact*/
+.contact_body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+.contact_form {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+.contact_label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+.contact_input, .contact_textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+.contact_textarea {
+    height: 100px;
+  }
+  
+.contact_button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+/*#endregion Contact*/  
