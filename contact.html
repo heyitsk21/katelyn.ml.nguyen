@@ -3,35 +3,18 @@
     <header class="top_navbar_header">
         <nav class="top_navbar">
             <a href="index.html">Home</a>
-            <img class="top_navbar_dividers">
-            <a href="about.html">Projects</a>
-            <img class="top_navbar_dividers">
-            <a href="about.html">Qualifications</a>
-            <img class="top_navbar_dividers">
-            <a href="about.html">Service</a>
-            <img class="top_navbar_dividers">
+            <img class="navbar_dividers">
+            <a href="projects.html">Projects</a>
+            <img class="navbar_dividers">
+            <a href="qualifications.html">Qualifications</a>
+            <img class="navbar_dividers">
+            <a href="service.html">Service</a>
+            <img class="navbar_dividers">
             <a href="contact.html">Contact</a>
         </nav>
     </header>
     
-    <header class="bottom_navbar_header">
-        <!-- <footer class="bottom_navbar"> -->
-            <div id="left_footer">
-                <a>Theme Selector</a>
-                <img src="Images/title_ornament_symmetric.png">
-            </div>
-
-            <div id="middle_footer">
-                <a>Contact Information</a>
-                <img src="Images/title_ornament_symmetric.png">
-            </div>
-
-            <div id="right_footer">
-                <a>Share This Site!</a>
-                <img src="Images/title_ornament_symmetric.png">
-            </div>
-        <!-- </footer> -->
-    </header>
+    <!-- Bottom navbar go here -->
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,19 +22,33 @@
     <link rel="stylesheet" href="style_home.css">
     </head>
     <body class="contact_body">
-
-    <form class="contact_form" action="mailto:websitehost@example.com" method="post" enctype="text/plain">
-        <label class="contact_label" for="name">Your Name:</label>
-        <input class="contact_input" type="text" id="name" name="name" required>
-
-        <label class="contact_label" for="email">Your Email:</label>
-        <input class="contact_input" type="email" id="email" name="email" required>
-
-        <label class="contact_label" for="message">Your Message:</label>
-        <textarea class="contact_textarea" id="message" name="message" required></textarea>
-
-        <button class="contact_button" type="submit">Send Message</button>
-    </form>
+        <div class="contact_container">
+            <div class="column" id="social_column">
+                    <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+                <div class="column" id="contact_form_column">
+                    <form class="contact_form" action="mailto:websitehost@example.com" method="post" enctype="text/plain">
+                        <label class="contact_label" for="name">Your Name:</label>
+                        <input class="contact_input" type="text" id="name" name="name" required>
+                
+                        <label class="contact_label" for="email">Your Email:</label>
+                        <input class="contact_input" type="email" id="email" name="email" required>
+                
+                        <label class="contact_label" for="message">Your Message:</label>
+                        <textarea class="contact_textarea" id="message" name="message" required></textarea>
+                
+                        <button class="contact_button" type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="column" id="qr_code_column">
+                    <img src="qr-code.png" alt="QR Code">
+                    <p>Share this site!</p>
+                    <!-- You can generate a QR code for your website and replace "qr-code.png" -->
+                  </div>
+        </div>
 
     </body>
 </html>
