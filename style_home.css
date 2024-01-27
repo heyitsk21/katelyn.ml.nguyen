@@ -507,7 +507,7 @@ background-position-y: flex; */
 /*#region Themes*/
 .theme_columns {
     display: flex;
-    
+    z-index: 15;
 }
 
 .theme_columns > * {
