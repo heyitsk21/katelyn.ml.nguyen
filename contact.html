@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="style_home.css">
+        <link rel="icon" type="image" class="website_icon" href="Images/in-line-ornament_black_lines-removebg-preview.png">
+    </head>
     <header class="top_navbar_header">
         <nav class="top_navbar">
             <a href="index.html">Home</a>
@@ -13,25 +20,36 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    
-    <!-- Bottom navbar go here -->
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="style_home.css">
-    </head>
-    <body class="contact_body">
-        <div class="contact_container">
-            <div class="column" id="social_column">
-                    <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
-                    <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+    <header class="bottom_navbar_header">
+        <a>Click to Change Theme</a>
+        <img class="navbar_dividers">
+        <a>Katelyn M. Nguyen</a>
+        <img class="navbar_dividers">
+        <a>Click to View HTML</a>
+    </header>
+
+
+    <div class="body_and_eiffel_foreground">
+        <body>
+            <div class="title_heading">
+                <img class="title_heading_left_ornament">
+                <a class="name">Contact Me!</a> <!--══════⊹⊱≼≽⊰⊹══════-->
+                <img class="title_heading_right_ornament">
+            </div>
+            <div class="contact_container">
+                <div class="column" id="social_column">
+                    <a>Social Media Links</a>
+                    <img class="title_ornament_symmetric">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100068878573268"><img src="Images/icons8-facebook-50.png" alt="Facebook"></a>
+                    <a target="_blank" href="https://www.instagram.com/k.n2102/"><img src="Images/icons8-instagram-50.png" alt="Instagram (Please message me and request to follow!)"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/katelyn-nguyen-659592263/"><img src="Images/icons8-linkedin-50.png" alt="LinkedIn"></a>
                     <!-- Add more social media icons as needed -->
                 </div>
                 <div class="column" id="contact_form_column">
+                    <a>Send Me a Message</a>
+                    <img class="title_ornament_symmetric">
                     <form class="contact_form" action="mailto:websitehost@example.com" method="post" enctype="text/plain">
-                        <label class="contact_label" for="name">Your Name:</label>
+                        <label class="contact_label" for="name">Full Name:</label>
                         <input class="contact_input" type="text" id="name" name="name" required>
                 
                         <label class="contact_label" for="email">Your Email:</label>
@@ -44,11 +62,15 @@
                     </form>
                 </div>
                 <div class="column" id="qr_code_column">
-                    <img src="qr-code.png" alt="QR Code">
-                    <p>Share this site!</p>
-                    <!-- You can generate a QR code for your website and replace "qr-code.png" -->
-                  </div>
-        </div>
-
-    </body>
+                    <a>Share this site!</a>
+                    <img class="title_ornament_symmetric">
+                    <img class="qr_code_img" src="Images/website_QR.png" alt="QR Code">
+                    <a target="_blank" href="https://people.tamu.edu/~heyitsk21/index.html"><img src="Images/icons8-copy-to-clipboard-50.png" alt="Copy Link To Clipboard"></a>
+                </div>
+            </div>
+            <div class="eiffel_foreground">
+                <img class="eiffel_image">
+            </div>
+        </body>
+    </div>
 </html>
