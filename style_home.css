@@ -222,16 +222,18 @@ body a {
 /* .eiffel_foreground {
     background-attachment: scroll;
 }
+*/
 
 .eiffel_image img {
-    content: url("Images/eiffel-tower-render.webp");
+    /* content: url("Images/eiffel-tower-render.webp");
     width: 50%;
     height: 50%;
     background-size: cover;
     position: absolute;
     transform: translateZ(-1px) scale(2.2);
-    position: absolute;
-} */
+    position: absolute; */
+    z-index: 1;
+}
 
 .eiffel_foreground::before {
     content:"";
@@ -393,116 +395,97 @@ background-position-y: flex; */
 /*#region Service*/
 /*#endregion Service*/
 
-/*#region Contact*/
-.contact_container {
-    margin-top: 0px;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: flex-start;
-    padding: 10px;
-    font-family: Brettley;
-    font-size: 30px;
-    z-index: 15;
-}
-
-.title_ornament_symmetric {
-    content: url("Images/title_ornament_symmetric.png");
-    width: 50%;
-    height: 50%;
-}
-
-.column {
-    width: 30%;
-    background-color: black;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
 
 
-#social_column, #contact_form_column, #qr_code_column {
-    text-align: center;
+/*#region contact_ai*/
+.body_contact_page {
+    background-image: none;
 }
 
-#social_column a, #qr_code_column a {
-    display: block;
-    margin-bottom: 10px;
-}
-#social_column img {
-    width: 20%;
-    height: 20%;
-}
-
-.qr_code_img {
-    width: 50%;
-    height: 50%;
-}
-
-#contact_form_column form {
-    width: 100%;
-}
-
-/* #qr_code_column img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-.contact_body {
-    font-family: Arial, sans-serif;
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-  }
-  
-.contact_form {
-    width: 400px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  } */
-  
-.contact_label {
-    display: block;
-    margin-bottom: 8px;
-    color: white;
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;; */
-    font-family: Brettley;
-    font-size: 30px;
-    text-align: left;
-  }
-  
-.contact_input, .contact_textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-  }
-  
-.contact_textarea {
-    height: 100px;
-  }
-  
-.contact_button , .theme_columns button{
-    background-color: #34ADA5;
+    background-color: #0c0c28;
     color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    font-family: Brettley;
-    font-size: 25px;
-  }
-  
-  button:hover {
-    background-color: #2F9D96;
-  }
-/*#endregion Contact*/  
+}
+
+.top_navbar_contact,
+.bottom_navbar_header_contact,
+.title_heading_contact,
+.contact_container_contact,
+.column_contact,
+.contact_form_contact,
+.contact_share_contact,
+.contact_label_contact,
+.contact_input_contact,
+.contact_textarea_contact,
+.contact_button_contact,
+.paragraph_heading_contact,
+.eiffel_foreground_contact {
+    background-color: #7f7feb;
+    border: 2px solid #7f7feb;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.contact_input_contact, .contact_textarea_contact {
+    background-color: white;
+}
+
+.contact_form_contact label[for="message"] {
+    display: inline-block; /* Ensures the label is on a new line */
+    margin-bottom: 5px; /* Adds some space below the label */
+    color: #fff; /* Set the text color */
+}
+
+.top_navbar_contact a,
+.bottom_navbar_header_contact a,
+.name_contact,
+.contact_container_contact a,
+.column_contact a,
+.contact_form_contact a,
+.paragraph_heading_contact h1,
+.paragraph_heading_contact p {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top_navbar_contact a:hover,
+.bottom_navbar_header_contact a:hover,
+.column_contact a:hover,
+.contact_form_contact a:hover {
+    color: #ffa500;
+}
+
+.title_heading_left_ornament_contact,
+.title_heading_right_ornament_contact,
+.title_ornament_symmetric_contact {
+    filter: invert(1);
+}
+
+.qr_code_img_contact {
+    width: 10%;
+    height: 10%;
+    /* max-width: 200px; */
+    height: auto;
+    margin-bottom: 10px;
+    filter: invert(1);
+}
+
+.eiffel_image_contact {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    filter: invert(1);
+}
+/*#endregion contact_ai*/
+
+
 
 /*#region Themes*/
 .theme_columns {
