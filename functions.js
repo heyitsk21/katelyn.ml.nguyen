@@ -27,5 +27,14 @@ function copyToClipboard(text) {
     alert('Link copied to clipboard: ' + text);
 }
 
+function loadStyle() {
+    page_style = localStorage.getItem("page_stylesheet_name");
+    if(page_style === null) {
+        page_style = "style_home.css"; //this is what i'm making the default style
+    }
+    document.getElementById("page_style").setAttribute("href", page_style);
+}
+
+load_style();
 // "1" + 1 = "11" //
 // "1" - 1 = 0    //
