@@ -5,17 +5,23 @@ var num = 0; // global variable
 //     document.getElementById("output").innerText = "Pressed x "+num+"of times.";
 // }
 
-function switchToParis() {
-    document.getElementById("selected_css").setAttribute("href", "style_home.css")
+function switchCss() {
+    if (page_style === "styles_home.css") {
+        document.getElementById("selected_css").setAttribute("href", "second_style.css");
+        page_style = "second_style.css";
+    } else {
+        document.getElementById("selected_css").setAttribute("href", "style_home.css");
+        page_style = "style_home.css";
+    }
 }
 
-function switchToPlain() {
-    document.getElementById("selected_css").setAttribute("href", "")
-}
+// function switchToPlain() {
+//     document.getElementById("selected_css").setAttribute("href", "")
+// }
 
-function switchToPlain() {
-    document.getElementById("selected_css").setAttribute("href", "")
-}
+// function switchToPlain() {
+//     document.getElementById("selected_css").setAttribute("href", "")
+// }
 
 function copyToClipboard(text) {
     const tempInput = document.createElement('input');
