@@ -10,69 +10,79 @@
     </head>
         
         
-    <header class="top_navbar_header_contact">
-        <nav class="top_navbar_contact">
+    <header class="top_navbar_header">
+        <nav class="top_navbar">
             <a href="index.html">Home</a>
-            <img class="navbar_dividers_contact">
+            <img class="navbar_dividers">
             <a href="projects.html">Projects</a>
-            <img class="navbar_dividers_contact">
+            <img class="navbar_dividers">
             <a href="qualifications.html">Qualifications</a>
-            <img class="navbar_dividers_contact">
+            <img class="navbar_dividers">
             <a href="service.html">Service</a>
-            <img class="navbar_dividers_contact">
+            <img class="navbar_dividers">
             <a href="contact.html">Contact</a>
-            <img class="navbar_dividers_contact">
+            <img class="navbar_dividers">
             <a href="ai.html">AI</a>
-            <img class="navbar_dividers_contact">
+            <img class="navbar_dividers">
             <a href="themes.html">Themes</a>
         </nav>
     </header>
     
-    <header class="bottom_navbar_header_contact">
-        <img class="navbar_dividers_contact">
+    <header class="bottom_navbar_header">
+        <img class="navbar_dividers">
         <a>Katelyn M. Nguyen</a>
-        <img class="navbar_dividers_contact">
+        <img class="navbar_dividers">
     </header>
 
 
-    <div class="body_and_eiffel_foreground_contact">
+    <div class="body_and_eiffel_foreground">
         <body class="body_contact_page">
-            <div class="title_heading_contact">
-                <img class="title_heading_left_ornament_contact">
-                <a class="name_contact">Contact</a>
-                <img class="title_heading_right_ornament_contact">
+            <div class="title_heading">
+                <img class="title_heading_left_ornament">
+                <a class="name">Contact</a>
+                <img class="title_heading_right_ornament">
             </div>
-            <div class="contact_container_contact">
-                <a>Social Media Links</a>
-                <div class="column_contact" id="social_column">
-                    <img class="title_ornament_symmetric_contact">
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100068878573268"><img src="Images/icons8-facebook-50.png" alt="Facebook"></a>
-                    <a target="_blank" href="https://www.instagram.com/k.n2102/"><img src="Images/icons8-instagram-50.png" alt="Instagram (Please message me and request to follow!)"></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/katelyn-nguyen-659592263/"><img src="Images/icons8-linkedin-50.png" alt="LinkedIn"></a>
+            <div class="contact_container">
+                <div class="paragraph_heading" id="social_column">
+                    <h1>Social Media Links</h1>
+                    <div class="social_media_links">
+                        <a class="link" target="_blank" href="https://www.facebook.com/profile.php?id=100068878573268"><img src="Images/icons8-facebook-50.png" alt="Facebook"></a>
+                        <a class="link" target="_blank" href="https://www.instagram.com/k.n2102/"><img src="Images/icons8-instagram-50.png" alt="Instagram (Please message me and request to follow!)"></a>
+                        <a class="link" target="_blank" href="https://www.linkedin.com/in/katelyn-nguyen-659592263/"><img src="Images/icons8-linkedin-50.png" alt="LinkedIn"></a>
+
+                    </div>
                     <!-- Add more social media icons as needed -->
                 </div>
-                <div class="column" id="contact_form_column_contact">
-                    <a>Send Me a Message</a>
-                    <img class="title_ornament_symmetric_contact">
-                    <form class="contact_form_contact" action="mailto:websitehost@example.com" method="post" enctype="text/plain">
-                        <label class="contact_label_contact" for="name">Full Name:</label>
-                        <input class="contact_input_contact" type="text" id="name" name="name" required>
-                        <hr>
-                        <label class="contact_label_contact" for="email">Your Email:</label>
-                        <input class="contact_input_contact" type="email" id="email" name="email" required>
-                        <hr>
-                        <label class="contact_label_contact" for="message">Your Message:</label>
-                        <textarea class="contact_textarea_contact" id="message" name="message" required></textarea>
-                        <hr>
-                        <button class="contact_button_contact" type="submit">Send Message</button>
+                <div class="paragraph_heading" id="contact_form_column">
+                    <h1>Message Me</h1>
+                    <form class="contact_form" action="mailto:websitehost@example.com" method="post" enctype="text/plain">
+                        <div>
+                            <label class="contact_label" for="name">Full Name:</label>
+                            <input class="contact_input" type="text" id="name" name="name" required>
+
+                        </div>
+                        <div>
+                            <label class="contact_label" for="email">Your Email:</label>
+                            <input class="contact_input" type="email" id="email" name="email" required>
+
+                        </div>
+                        <div>
+                            <label class="contact_label" for="message">Your Message:</label>
+                            <textarea class="contact_textarea" id="message" name="message" required></textarea>
+
+                        </div>
+                        <button class="contact_button" type="submit">Send Message</button>
                     </form>
                 </div>
-                <div class="column" id="qr_code_column_contact">
-                    <a>Share this site!</a>
-                    <img class="title_ornament_symmetric_contact">
-                    <div class="contact_share_contact">
-                        <img class="qr_code_img_contact" src="Images/website_QR.png" alt="QR Code">
-                        <a target="_blank"><img src="Images/icons8-copy-to-clipboard-50.png" alt="Copy Link To Clipboard" onclick="copyToClipboard('https://people.tamu.edu/~heyitsk21/index.html')"></a>
+                <div class="paragraph_heading" id="qr_code_column">
+                    <h1>Share this site!</h1>
+                    <img class="title_ornament_symmetric">
+                    <div class="contact_share">
+                        <img class="qr_code_img" src="Images/website_QR.png" alt="QR Code">
+                    </div>
+                    <div class="contact_share">
+                            
+                        <a target="_blank"><img id="copy_clipboard" src="Images/icons8-copy-to-clipboard-50.png" alt="Copy Link To Clipboard" onclick="copyToClipboard('https://people.tamu.edu/~heyitsk21/index.html')"></a>
                         <!-- <script>
                             function copyToClipboard(text) {
                                 const tempInput = document.createElement('input');
@@ -89,8 +99,8 @@
                     </div>
                 </div>
             </div>
-            <div class="eiffel_foreground_contact">
-                <img class="eiffel_image_contact">
+            <div class="eiffel_foreground">
+                <img class="eiffel_image">
             </div>
         </body>
     </div>

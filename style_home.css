@@ -33,7 +33,7 @@
     padding: 0;
     box-sizing: border-box;
     /* font-family: "Brettley"; */
-    color: black;
+    color: white;
 }
 
 h1, h2 {
@@ -78,6 +78,14 @@ body a {
 a:hover {
     color: #7f7feb;
     font-size: 20px;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    font-size: 30px;
 }
 
 .website_icon {
@@ -236,7 +244,7 @@ a:hover {
     position: absolute;
     transform: translateZ(-1px) scale(2.2);
     position: absolute; */
-    z-index: 1;
+    z-index: -10;
 }
 
 .eiffel_foreground::before {
@@ -250,7 +258,7 @@ a:hover {
     background-attachment: scroll;
     background-size: cover;
     transform: translateZ(-10px) scale(2.2);
-    z-index: 8;
+    z-index: -10;
 }
 /*
 
@@ -287,6 +295,7 @@ background-position-y: flex; */
     margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 0px;
+    z-index: 10;
 }
 
 .quick_facts_column {
@@ -416,29 +425,42 @@ body {
     color: #fff;
 }
 
-.top_navbar_contact,
-.bottom_navbar_header_contact,
-.title_heading_contact,
-.contact_container_contact,
-.column_contact,
-.contact_form_contact,
-.contact_share_contact,
-.contact_label_contact,
-.contact_input_contact,
-.contact_textarea_contact,
-.contact_button_contact,
-.paragraph_heading_contact,
+/* .top_navbar, */
+/* .bottom_navbar_header, */
+/* .title_heading, */
+/* .contact_container {
+    margin-bot
+} */
+
+.contact_container,
+.column,
+.contact_form,
+.contact_share,
+.contact_label,
+/* .contact_button, */
+/* .paragraph_heading, */
 .eiffel_foreground_contact {
-    background-color: #7f7feb;
-    border: 2px solid #7f7feb;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    /* background-color: #7f7feb; lilac color! */
+    /* border: 2px solid #7f7feb; */
+    /* border-radius: 8px; */
+    /* margin: 10px; */
+    /* padding: 20px; */
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); */
     color: white;
+    font-family: Brettley;
+    font-size: 20px;
 }
 
-.contact_input_contact, .contact_textarea_contact {
+
+.contact_input,
+.contact_textarea {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact_input, .contact_textarea_contact {
     background-color: white;
 }
 
@@ -450,7 +472,7 @@ body {
 
 .top_navbar_contact a,
 .bottom_navbar_header_contact a,
-.name_contact,
+.name,
 .contact_container_contact a,
 .column_contact a,
 .contact_form_contact a,
@@ -459,21 +481,30 @@ body {
     color: #fff;
     text-decoration: none;
 }
-
+/* 
 .top_navbar_contact a:hover,
 .bottom_navbar_header_contact a:hover,
 .column_contact a:hover,
 .contact_form_contact a:hover {
     color: #ffa500;
-}
+} */
 
-.title_heading_left_ornament_contact,
-.title_heading_right_ornament_contact,
+/* .title_heading_left_ornament,
+.title_heading_right_ornament,
 .title_ornament_symmetric_contact {
     filter: invert(1);
+} */
+
+.social_media_links, .contact_share {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact_share {
+    display: flex;
+    justify-content: center;
 }
 
-.qr_code_img_contact {
+.qr_code_img {
     width: 10%;
     height: 10%;
     /* max-width: 200px; */
@@ -482,33 +513,41 @@ body {
     filter: invert(1);
 }
 
-.eiffel_image_contact {
+.copy_clipboard {
+    width: 5%;
+    height: 5%;
+}
+
+.eiffel_image {
     width: 100%;
     height: auto;
     position: absolute;
     bottom: 0;
     filter: invert(1);
+    z-index: -1;
 }
 /*#endregion contact_ai*/
 
 
 
 /*#region Themes*/
-.theme_columns {
+
+
+/* .theme_columns {
     display: flex;
     z-index: 15;
-}
+} */
 
-.theme_columns > * {
+/* .theme_columns > * {
     font-family: Brettley;
     font-size: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-}
+} */
 
-.theme_columns img {
+/* .theme_columns img {
     margin: auto;
     height: 50%;
     width: 50%;
@@ -520,7 +559,7 @@ body {
     width: 50%;
     height: 100%;
     margin-bottom: 20px;
-    /* content: ; */
-}
+    color: #7f7feb;
+} */
 
 /*#endregion Themes*/
