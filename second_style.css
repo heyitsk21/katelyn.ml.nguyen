@@ -1,0 +1,60 @@
+@font-face {
+  font-family: AceSans;
+  src: url(Fonts/AceSansFree-2O2LX.otf);
+}
+
+html,
+body {
+  font-family: AceSans;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #d3dce6;
+  font-family: monospace;
+}
+body {
+  font-family: AceSans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  font-family: AceSans;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #525d6f;
+  opacity: 0.4;
+  transition: opacity 0.4s ease-in-out;
+  display: block;
+  width: calc(100% - 48px);
+  text-align: right;
+  z-index: 100;
+  user-select: none;
+}
+a {
+  font-family: AceSans;
+  transition: all 0.3s ease;
+}
+a:hover {
+  font-size: 28px;
+}
+.top_navbar_header {
+  display: grid;
+
+  font-size: 20px;
+}
+.navbar_dividers {
+  flex-basis: 100%;
+  height: 0;
+}
+.bottom_navbar_header {
+  text-transform: uppercase;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #9f8082;
+  color: white;
+  margin: 20px;
+}
