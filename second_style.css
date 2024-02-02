@@ -3,22 +3,42 @@
   src: url(Fonts/AceSansFree-2O2LX.otf);
 }
 
+@font-face {
+  font-family: LibreFranklin;
+  src: url(Fonts/LibreFranklinThin-G79a.ttf);
+}
+
+* {
+  font-family: LibreFranklin;
+  letter-spacing: 1px;
+}
+p {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+h1,
+h2 {
+  margin-left: 50px;
+}
 html,
 body {
-  font-family: AceSans;
+  /* font-family: AceSans; */
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  margin: 10px;
+  padding: auto;
+  /* overflow: hidden; */
   background-color: #d3dce6;
-  font-family: monospace;
+  /* font-family: monospace; */
+  /* text-transform: lowercase; */
 }
 body {
-  font-family: AceSans;
+  /* font-family: AceSans; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
-label {
+/* label {
   font-family: AceSans;
   font-size: 24px;
   font-weight: 700;
@@ -31,30 +51,163 @@ label {
   text-align: right;
   z-index: 100;
   user-select: none;
-}
+} */
 a {
-  font-family: AceSans;
+  /* font-family: AceSans; */
   transition: all 0.3s ease;
 }
 a:hover {
+  /* color: blueviolet; */
   font-size: 28px;
 }
-.top_navbar_header {
-  display: grid;
 
+.top_navbar_header {
+  font-family: AceSans;
+  text-transform: uppercase;
+  /* display: grid; */
+  max-width: 30vw;
+  /* flex-wrap: wrap; */
   font-size: 20px;
+  max-width: min-content;
+  flex-basis: 14.285714285%;
+  padding: 10px;
+  /* max-width: 200px; */
+  justify-content: left;
+  top: 0;
+  left: 0;
+}
+.top_navbar {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: #9f8082;
+  margin-right: 80px;
+  width: 100%;
+  justify-content: left;
+}
+.top_navbar a {
+  color: white;
+}
+.top_navbar a:hover {
+  color: #e85d75;
+  background-color: #d3dce6;
+  border-color: black;
+}
+.top_navbar img {
+  width: 60%;
+  height: 80%;
+  padding: 5px;
 }
 .navbar_dividers {
   flex-basis: 100%;
-  height: 0;
+  /* height: 0; */
 }
 .bottom_navbar_header {
-  text-transform: uppercase;
+  /* text-transform: uppercase;
   text-orientation: upright;
   writing-mode: vertical-lr;
   padding: 20px;
   border-radius: 20px;
   background-color: #9f8082;
   color: white;
-  margin: 20px;
+  margin: 20px; */
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 10;
+  line-height: 0.6em;
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 30px;
+  background-color: #9f8082;
+  padding: 20px;
+  width: 100%;
+}
+
+#home_nav {
+  content: url(Images/icons8-home-50.png);
+}
+#projects_nav {
+  content: url(Images/icons8-group-of-projects-50.png);
+}
+#qualifications_nav {
+  content: url(Images/icons8-prize-50.png);
+}
+#service_nav {
+  content: url(Images/icons8-service-50.png);
+}
+#contact_nav {
+  content: url(Images/icons8-contact-50.png);
+}
+#ai_nav {
+  content: url(Images/icons8-artificial-intelligence-50.png);
+}
+#themes_nav {
+  content: url(Images/icons8-paint-roller-50.png);
+}
+
+/* img {
+  filter: invert(1);
+  width: 100%;
+  height: 100%;
+} */
+
+/* .body_and_eiffel_foreground, */
+.eiffel_image {
+  /* padding-bottom: 500px; */
+  /* margin-bottom: 500px; */
+  content: url(Images/eiffel-tower-render.webp);
+  height: 10%;
+  width: 10%;
+  filter: opacity(0);
+}
+
+/* .top_navbar img {
+  display: inline;
+  height: 15%;
+  width: 15%;
+} */
+
+button,
+.social_media_links,
+.contact_label,
+.my_resume {
+  width: 100%;
+  margin-left: 100px;
+}
+
+.qr_code_img {
+  height: 50%;
+  width: 50%;
+  margin-left: 100px;
+  filter: invert(1);
+}
+
+#copy_clipboard {
+  margin-left: 100px;
+}
+
+.navbar_pics {
+  border: 1px solid white;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+#pic_home {
+  content: url(Images/Pictures/tamu_acceptance.jpg);
+}
+#pic_projects {
+  content: url(Images/Pictures/ao_dai_red.jpg);
+}
+#pic_qualifications {
+  content: url(Images/Pictures/professional_headshot2.jpg);
+}
+#pic_service {
+  content: url(Images/Pictures/lake_louise_canada.jpg);
+}
+#pic_contact {
+  content: url(Images/Pictures/angel_white.jpg);
+}
+#pic_themes {
+  content: url(Images/Pictures/halloween_mixer_camera.jpg);
 }
