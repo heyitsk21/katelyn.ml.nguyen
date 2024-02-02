@@ -184,6 +184,10 @@ button,
   margin-left: 100px;
 }
 
+.social_media_links > *:hover {
+  filter: invert(1);
+}
+
 #my_resume {
   border-color: #9f8082;
 }
