@@ -1,6 +1,6 @@
 const STYLESHEET_KEY = "stylesheet";
-const DEFAULT = "style_home.css";
-const ALT = "second_style.css";
+const DEFAULT = "second_style.css";
+const ALT = "style_home.css";
 
 function toggleStyleSheet() {
     var styleElement = document.getElementById("selected_css");
