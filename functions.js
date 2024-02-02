@@ -39,13 +39,13 @@ window.onload = function() {
     element.setAttribute("href",local1);
 }
 
-function setIcon(favImg){
-    let headTitle = document.querySelector('head');
-    let setFavicon = document.createElement('link');
-    setFavicon.setAttribute('rel','icon');
-    setFavicon.setAttribute('href',favImg);
-    headTitle.appendChild(setFavicon);
-}
+// function setIcon(favImg){
+//     let headTitle = document.querySelector('head');
+//     let setFavicon = document.createElement('link');
+//     setFavicon.setAttribute('rel','icon');
+//     setFavicon.setAttribute('href',favImg);
+//     headTitle.appendChild(setFavicon);
+// }
 
 function copyToClipboard(text) {
     const tempInput = document.createElement('input');
@@ -61,6 +61,8 @@ function copyToClipboard(text) {
     // navigator.clipboard.writeText(text);
 }
 
+
+toggleStyleSheet()
 
 
 // loadStyle()
