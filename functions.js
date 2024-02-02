@@ -39,17 +39,26 @@ window.onload = function() {
     element.setAttribute("href",local1);
 }
 
+function setIcon(favImg){
+    let headTitle = document.querySelector('head');
+    let setFavicon = document.createElement('link');
+    setFavicon.setAttribute('rel','icon');
+    setFavicon.setAttribute('href',favImg);
+    headTitle.appendChild(setFavicon);
+}
+
 function copyToClipboard(text) {
-    // const tempInput = document.createElement('input');
-    // tempInput.value = text;
-    // document.body.appendChild(tempInput);
-    // tempInput.select();
-    // document.execCommand('copy');
-    // document.body.removeChild(tempInput);
-    // alert('Link copied to clipboard: ' + text);
+    const tempInput = document.createElement('input');
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    alert('Link copied to clipboard: ' + text);
 
     // var Text = document.getElementById("")
-    navigator.clipboard.writeText(text);
+
+    // navigator.clipboard.writeText(text);
 }
 
 

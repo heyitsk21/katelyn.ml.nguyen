@@ -8,6 +8,11 @@
   src: url(Fonts/LibreFranklinThin-G79a.ttf);
 }
 
+/* .website_icon {
+  transform: rotate(2deg);
+  content: url(Images/k_logo_black_bgr-removebg-preview.ico);
+} */
+
 * {
   font-family: LibreFranklin;
   letter-spacing: 1px;
@@ -16,9 +21,11 @@ p {
   margin-right: 100px;
   margin-left: 100px;
 }
-h1,
-h2 {
+h1 {
   margin-left: 50px;
+}
+h2 {
+  margin-left: 75px;
 }
 html,
 body {
@@ -31,6 +38,7 @@ body {
   background-color: #d3dce6;
   /* font-family: monospace; */
   /* text-transform: lowercase; */
+  min-width: 90vw;
 }
 body {
   /* font-family: AceSans; */
@@ -171,33 +179,47 @@ a:hover {
 button,
 .social_media_links,
 .contact_label,
-.my_resume {
+#my_resume {
   width: 100%;
   margin-left: 100px;
 }
 
+#my_resume {
+  border-color: #9f8082;
+}
+
 .qr_code_img {
-  height: 50%;
-  width: 50%;
+  height: 20%;
+  width: 20%;
   margin-left: 100px;
   filter: invert(1);
 }
 
 #copy_clipboard {
-  margin-left: 100px;
+  margin-top: 50px;
+  margin-left: 150px;
+  src: url(https://people.tamu.edu/~heyitsk21/);
+}
+
+#copy_clipboard:hover {
+  filter: invert(1);
 }
 
 .navbar_pics {
-  border: 1px solid white;
-  max-width: 30px;
-  max-height: 30px;
+  border: 10px solid #9f8082;
+  max-width: auto;
+  max-height: auto;
 }
 
+.navbar_pics img {
+  width: 100%;
+  height: auto;
+}
 #pic_home {
   content: url(Images/Pictures/tamu_acceptance.jpg);
 }
 #pic_projects {
-  content: url(Images/Pictures/ao_dai_red.jpg);
+  content: url(Images/Pictures/halloween_mixer_camera.jpg);
 }
 #pic_qualifications {
   content: url(Images/Pictures/professional_headshot2.jpg);
@@ -209,5 +231,23 @@ button,
   content: url(Images/Pictures/angel_white.jpg);
 }
 #pic_themes {
-  content: url(Images/Pictures/halloween_mixer_camera.jpg);
+  content: url(Images/Pictures/paris_green.jpg);
+}
+
+.contact_form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  font-size: 20px;
+}
+.contact_form > * {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+button {
+  font-family: LibreFranklin;
+  font-size: 20px;
+  width: auto;
+  text-align: left;
 }
